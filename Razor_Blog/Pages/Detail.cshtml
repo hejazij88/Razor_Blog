@@ -1,0 +1,16 @@
+﻿@page "{id:Guid}"
+@model Razor_Blog.Pages.DetailModel
+@{
+}
+
+<div class="col-12 mb-3">
+    <h1>@Model.ArticleDetail.Title</h1>
+</div>
+<div class="col-12 mb-3">
+    <img src="@Model.ArticleDetail.Picture" alt="@Model.ArticleDetail.PictureAlt" title="@Model.ArticleDetail.PictureTitle" class="img-fluid">
+</div>
+<div class="col-12">
+    <p class="article-content">
+        @Model.ArticleDetail.Body
+    </p>
+</div>

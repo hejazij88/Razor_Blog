@@ -12,7 +12,7 @@
     </div>
 </div>
 
-@* @foreach (var article in Model.Articles)
+ @foreach (var article in Model.Articles)
 {
     <div class="col-4 mb-2">
         <div class="card">
@@ -22,12 +22,12 @@
                 <p class="card-text">
                     @article.ShortDescription
                 </p>
-                <a asp-page="./ArticleDetails" 
+                <a asp-page="./Detail" 
                    asp-route-id="@article.Id" 
                    class="btn btn-primary">ادامه مطلب</a>
 
                 <a asp-page-handler="Delete" asp-route-id="@article.Id" class="btn btn-danger">حذف</a>
             </div>
         </div>
-    </div> *@
+    </div> 
 }
